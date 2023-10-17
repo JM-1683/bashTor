@@ -31,7 +31,9 @@ done < tor_exit_list.txt
 
 firewall-cmd --reload
 
-# Cleanup
-rm tor_exit_list.txt
+# Uncomment the below line to remove the text file of
+# tor exit nodes -- or write whatever cleanup routine here
 
-echo "Blocking complete!"
+# rm tor_exit_list.txt
+
+echo "Firewall rules updated to block Tor exit nodes."
